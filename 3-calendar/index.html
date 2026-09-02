@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calendar</title>
+
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <table class="calendar" data-calendar>
+            <caption class="calendar__title">Сентябрь 2026</caption>
+            <thead data-days-name>
+                <tr>
+                    <th title ="Понедельник">Пн</th>
+                    <th title ="Вторник">Вт</th>
+                    <th title ="Среда">Ср</th>
+                    <th title ="Четверг">Чр</th>
+                    <th title ="Пятница">Пт</th>
+                    <th title ="Суббота">Сб</th>
+                    <th title ="Воскресенье">Вс</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="disabled"></td>
+                    <td>1</td>
+                    <td class="selected">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td colspan="4" class="disabled"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="day">
+            <div class="day__title">Выбрано:</div>
+            <div class="day__info" data-day-info>
+                <span data-day-number>2</span>
+                сентября -
+                <span data-day-week>Среда</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
