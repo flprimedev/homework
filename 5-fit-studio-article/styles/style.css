@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url("../fonts/UbuntuLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url("../fonts/UbuntuRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url("../fonts/UbuntuMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url("../fonts/OswaldMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url("../fonts/OswaldSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --family-prime: "Ubuntu", sans-serif;
+    --family-secondary: "Oswald", sans-serif;
+
+    --color-primary: #535755;
+    --color-alternate: #2c332f;
+    --color-accent: #3596ed;
+	--color-light: #f2f2f3;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--family-prime);
+    line-height: 1.3;
+    color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--family-secondary);
+    text-transform: uppercase;
+    line-height: 1.15;
+    font-weight: 600;
+    color: var(--color-alternate);
+    margin: 0;
+}
+
+a {
+    --a-color: var(--color-primary);
+
+    color: var(--a-color);
+    transition: color .3s;
+}
+
+a:hover {
+    --a-color: var(--color-accent);
+    text-decoration: none;
+}
+
+video,
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+video {
+    object-fit: cover;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.page__content {
+    --page-content-padding-top: 40px;
+    --page-content-padding-bottom: 60px;
+
+    flex: 1;
+    padding-top: var(--page-content-padding-top);
+    padding-bottom: var(--page-content-padding-bottom);
+}
+
+.title {
+    --title-font-size: 32px;
+
+    font-size: var(--title-font-size);
+    margin-bottom: .83em;
+}
+
+.title--max-md {
+    max-width: 598px;
+}
+
+.container {
+    --container-padding-horizontal: 16px;
+
+    margin: 0 auto;
+    padding: 0 var(--container-padding-horizontal);
+    max-width: calc(1220px + var(--container-padding-horizontal) * 2);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding: 30px 0;
+}
+
+.phone-box__info {
+    margin: 0;
+}
+
+.footer {
+    background: linear-gradient(90deg, rgba(73, 169, 255, 0.2) 0%, rgba(252, 124, 217, 0.2) 100%);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0 40px;
+}
+
+.footer__bottom {
+    border-top: 1px solid;
+    padding: 40px 0;
+}
+
+.footer__copy {
+    margin: 0;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .page__content {
+        --page-content-padding-top: 80px;
+        --page-content-padding-bottom: 120px;
+    }
+    .title {
+        --title-font-size: 48px;
+    }
+}

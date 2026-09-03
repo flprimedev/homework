@@ -1,0 +1,47 @@
+.text-content {
+    --step-small: 16px;
+    --step-default: 24px;
+    --step-medium: 60px;
+
+    ul,
+    p {
+        margin: var(--step-small) 0;
+    }
+
+    img {
+        margin: var(--step-medium) 0;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin: var(--step-medium) 0 var(--step-default);
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+
+    li {
+        margin-bottom: 12px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+
+    li::marker {
+        color: var(--color-accent);
+    }
+
+    video {
+        margin: var(--step-default) 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text-content {
+        --step-small: 20px;
+        --step-default: 40px;
+        --step-medium: 80px;
+    }
+}
