@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <form class="form">
+            <h2 class="form__title">Ваши личные данные</h2>
+            <fieldset class="form__group">
+                <label class="field">
+                    <span class="field__name">Имя <sup>*</sup></span>
+                    <input type="text" name="name" placeholder="Иван" class="field__input" required>
+                </label>
+                <label class="field">
+                    <span class="field__name">Возраст <sup>*</sup></span>
+                    <input type="number" name="age" placeholder="18" min="0" class="field__input" inputmode="numeric" required>
+                </label>
+                <label class="field">
+                    <span class="field__name">Телефон <sup>*</sup></span>
+                    <input type="tel" name="phone" placeholder="+7 (999) 999 99 99" class="field__input" inputmode="tel" required>
+                </label>
+                <label class="field">
+                    <span class="field__name">Почта <sup>*</sup></span>
+                    <input type="email" name="email" placeholder="example@email.com" class="field__input" inputmode="email" required>
+                </label>
+            </fieldset>
+            <fieldset class="form__group">
+                <label class="field">
+                    <span class="field__name">Сообщение</span>
+                    <textarea name="message" placeholder="Ваше сообщение" class="field__input field__textarea"></textarea>
+                </label>
+                <label class="field field--checkbox">
+                    <input type="checkbox" name="check" value="check" class="checkbox" required>
+                    <span class="field__name">Я принимаю <a href="#" target="_blank">правила</a> <sup>*</sup></span>
+                </label>
+            </fieldset>
+            <div class="form__controls">
+                <button type="submit" class="form__button">Отправить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
