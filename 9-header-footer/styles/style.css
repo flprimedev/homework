@@ -150,8 +150,8 @@ video {
     min-width: 100vw;
     height: 48px;
     background-color: var(--color-tertiary);
-    mask-image: url('../assets/images/sprite.svg#decor');
-    -webkit-mask-image: url('../assets/images/sprite.svg#decor');
+    mask-image: url('../assets/images/icons/decor.svg');
+    -webkit-mask-image: url('../assets/images/icons/decor.svg');
 }
 
 .decor--left::after {

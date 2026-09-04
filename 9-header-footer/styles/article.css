@@ -85,8 +85,8 @@
     height: 24px;
     transform: translateX(2px);
     background-color: var(--color-white);
-    mask-image: url('../assets/images/sprite.svg#play');
-    -webkit-mask-image: url('../assets/images/sprite.svg#play');
+    mask-image: url('../assets/images/icons/play.svg');
+    -webkit-mask-image: url('../assets/images/icons/play.svg');
     mask-position: center;
     -webkit-mask-position: center;
     mask-repeat: no-repeat;
