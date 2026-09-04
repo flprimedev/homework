@@ -164,6 +164,7 @@ video {
     background-color: var(--color-tertiary);
     mask-image: url('../assets/images/icons/decor.svg');
     -webkit-mask-image: url('../assets/images/icons/decor.svg');
+    z-index: -1;
 }
 
 .decor--left::after {
@@ -177,7 +178,7 @@ video {
 }
 
 .decor--full::after {
-    bottom: 106px;
+    bottom: 21%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -216,11 +217,15 @@ video {
     -webkit-mask-image: url('../assets/images/icons/arrow-right-long.svg');
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    transform: translate(2px, 0);
     transition: transform .3s;
+    background-color: var(--color-accent);
 }
 
-.link--with-arrow::after {
-    transform: translateX(50%);
+.link--with-arrow:hover::after {
+    transform: translate(2px, 50%);
 }
 
 .button {
