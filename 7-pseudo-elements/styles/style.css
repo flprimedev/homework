@@ -179,7 +179,8 @@ video {
 .decor::after {
     content: '';
     position: absolute;
-    width: 100vw;
+    width: 2600px;
+    min-width: 100vw;
     height: 48px;
     background-color: var(--color-tertiary);
     mask-image: url('../images/icons/decor.svg');
