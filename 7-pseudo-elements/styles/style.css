@@ -184,8 +184,6 @@ video {
     background-color: var(--color-tertiary);
     mask-image: url('../images/icons/decor.svg');
     -webkit-mask-image: url('../images/icons/decor.svg');
-    mask-repeat: repeat;
-    -webkit-mask-repeat: repeat;
 }
 
 .decor--left::after {
