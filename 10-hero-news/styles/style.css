@@ -219,13 +219,13 @@ video {
     -webkit-mask-repeat: no-repeat;
     mask-position: center;
     -webkit-mask-position: center;
-    transform: translate(2px, 0);
+    transform: translate(0, 2px);
     transition: transform .3s;
     background-color: var(--color-accent);
 }
 
 .link--with-arrow:hover::after {
-    transform: translate(2px, 50%);
+    transform: translate(50%, 2px);
 }
 
 .button {
