@@ -28,6 +28,10 @@
     margin: 0;
 }
 
+.hero__view img {
+    max-width: 50%;
+}
+
 .hero__title {
     margin-bottom: .64em;
 }
